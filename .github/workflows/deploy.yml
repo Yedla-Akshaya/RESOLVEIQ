@@ -24,11 +24,11 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        working-directory: frontend
+        working-directory: ResolveIQ/frontend
         run: npm install
 
       - name: Build React app
-        working-directory: frontend
+        working-directory: ResolveIQ/frontend
         run: npm run build
 
       - name: Setup Pages
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: ResolveIQ/frontend/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
