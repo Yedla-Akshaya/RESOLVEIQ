@@ -1,0 +1,28 @@
+{
+  "name": "resolveiq",
+  "version": "2.0.0",
+  "description": "ResolveIQ - Autonomous AI Engineering / Error Resolution Agent",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev:backend": "nodemon backend/src/server.js",
+    "dev:frontend": "npm run dev --prefix backend/frontend",
+    "test": "node backend/src/test-tools.js && node backend/src/test-orchestrator.js"
+  },
+  "keywords": [
+    "resolveiq",
+    "autonomous-agent",
+    "incident-resolution"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

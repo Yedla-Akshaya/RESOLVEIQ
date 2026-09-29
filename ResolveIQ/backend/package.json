@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "2.0.0",
+  "description": "ResolveIQ Autonomous AI Engineering Agent Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node src/test-tools.js && node src/test-orchestrator.js",
+    "test:agent": "node src/test-agent.js",
+    "test:tools": "node src/test-tools.js",
+    "test:e2e": "node src/test-orchestrator.js"
+  },
+  "keywords": [
+    "resolveiq",
+    "autonomous-agent",
+    "sre",
+    "incident-response"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vectorize-io/hindsight-client": "^0.10.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
