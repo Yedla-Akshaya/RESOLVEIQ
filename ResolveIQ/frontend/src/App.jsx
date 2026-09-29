@@ -29,8 +29,9 @@ import {
   X,
 } from "lucide-react";
 import "./App.css";
+const API_URL = "https://democracy-gotta-shine-chances.trycloudflare.com";
 
-const API_URL = "http://localhost:5000";
+
 
 const DEMO_SCENARIO = `Payment API is returning HTTP 500 errors. Error rate has increased significantly after recent deployment v2.8.4. Database connection pool errors and timeout exceptions observed in pod logs.`;
 
